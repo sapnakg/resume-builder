@@ -4,7 +4,7 @@
         <div class="col-xs-12">
             <form >
                 <div class="row">
-                    <div class="col-sm-5 form-group">
+                    <div class="col-sm-3 form-group">
                         <label for="name">Name: </label>
                         <input 
                         type="text"
@@ -14,7 +14,7 @@
                         ngModel
                         required>
                     </div>
-                    <div class="col-sm-5 form-group">
+                    <div class="col-sm-3 form-group">
                         <label for="email">Email: </label>
                         <input 
                             type="email" 
@@ -25,7 +25,7 @@
                             required
                             email> 
                     </div>
-                    <div class="col-sm-5 form-group">
+                    <div class="col-sm-3 form-group">
                         <label for="location" >Location: </label>
                         <input 
                         type="text"
@@ -35,7 +35,7 @@
                         ngModel
                         required>
                     </div>
-                    <div class="col-sm-5 form-group">
+                    <div class="col-sm-3 form-group">
                         <label for="phone" >Phone: </label>
                         <input 
                         type="number" 
@@ -45,23 +45,25 @@
                         ngModel
                         required>
                     </div>
-                    <div class="col-sm-5 form-group">
+                    <div class="col-sm-3 form-group">
                             <label for="linkdin">LinkdIn: </label>
                             <input 
-                            type="text">
+                            type="text"
+                            class="form-control">
                     </div>
-                    <div class="col-sm-5 form-group">
+                    <div class="col-sm-3 form-group">
                             <label for="github">GitHub: </label>
                             <input 
-                            type="text">
+                            type="text"
+                            class="form-control">
                     </div>
-                </div>    
+                </div>   
             </form>
         </div>
     </div>
     <div class="container">
             <div class="row">
-              <div class="text-center">
+              <div class="text-right">
                   <button class="btn btn-success" (click)="onNext()">Next</button>
               </div>
             </div>
