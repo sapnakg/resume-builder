@@ -1,0 +1,8 @@
+.row{
+    display: -ms-inline-flexbox;
+    flex-direction: row;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}

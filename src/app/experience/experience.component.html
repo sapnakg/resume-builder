@@ -1,1 +1,21 @@
-<p>experience works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <form [formGroup]="addExpForm"></form>
+        <h3>Experience Details</h3>
+        <button type="button" 
+        class="btn btn-success"
+        (click)="onAddExp()">Add Experience</button>
+        <div class="row">
+            <div class="col-xs-12"
+            formArraName="exp"
+            *ngFor ="let expcontrol of addExpForm.get('exp').controls; let i = i "
+           [formControlName]="i" >
+       <div class="row">
+<div class="col-xs-12">
+    <input type="text" class="form-control">
+</div>
+       </div> 
+    </div>
+        </div>
+    </div>
+</div>
