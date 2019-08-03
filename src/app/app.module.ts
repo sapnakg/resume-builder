@@ -6,6 +6,9 @@ import { PersonalComponent } from './personal/personal.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SoftSkillsComponent } from './skills/softskills/softskills.component';
+import { TechSkillsComponent } from './skills/techskills/techskills.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,14 @@ import { SkillsComponent } from './skills/skills.component';
     PersonalComponent,
     EducationComponent,
     ExperienceComponent,
-    SkillsComponent
+    SkillsComponent,
+    SoftSkillsComponent,
+    TechSkillsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
