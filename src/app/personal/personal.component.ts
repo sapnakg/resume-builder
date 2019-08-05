@@ -12,4 +12,8 @@ export class PersonalComponent implements OnInit {
   ngOnInit() {
   }
 
+  onNext(){
+    
+  }
+
 }
