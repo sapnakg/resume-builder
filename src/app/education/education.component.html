@@ -3,7 +3,7 @@
   <div class="col-xs-12">
     <form>
       <div id ="schoolName"> 
-          <div class="form-group">
+          <div class="col-sm-3 form-group">
             <h3>School details</h3>
                 <label for="schoolName" >School Name  </label>
                 <label for="schoolName" ></label>
@@ -12,70 +12,87 @@
               class="form-control"
               schoolName="schoolName"
               ngModule required>
-          </div><br>
-          <div class="form-group">
+          </div>
+          <div class="col-sm-3 form-group">
                   <label for="fromYear">From Year </label>
-                  <input type="number"
+                  <input type="date"
                   id="fromYear"
                   class="form-control" 
                   fromYear="fromYear"
                   ngModule required>
                   <label for ="toYear"> To Year </label>
-                  <input type="number" 
+                  <input type="date" 
                   id = "toYear"
                   class="form-control"
                   toYear="toYear"ngModule required>
-            </div><br>    
-           <div class="form-group">
+            </div> 
+           <div class="col-sm-3 form-group">
                 <label for="percentage">Percentage  </label>
-                <input type="number" 
+                <input type="percentage" 
                 id="percentage"
                 class="form-control"
                 percentage="percentage"
                 ngModule required>
-          </div><br>
-          <button class="btn btn-primary" type="submit">Save</button>
-          <button class ="btn btn-primary" type="reset">reset</button>
-      </div>
-     </form>
+              </div>
+              <button class="btn btn-primary" type="submit">Save</button>
+              <button class ="btn btn-primary" type="reset">reset</button>
+          </div>
+         </form>
   </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
       <form>
-        <div id ="colName"> 
-            <div class="form-group">
-              <h3>PUC/ +2 details details</h3>
+              <div id ="colName"> 
+            <div class="col-sm-3 form-group">
+              <h3>PUC / +2 details details</h3>
                 <label for="colName" >Institution Name  </label>
                 <input type="text" 
-                id= "schoolName"
+                id= "colName"
                 class="form-control"
-                schoolName="schoolName">
-            </div><br>
-             <div class="form-group">
-                    <label for="fromYear">From Year </label>
-                    <input type="number"
-                    id="fromYear"
+                schoolName="colName">
+            </div>
+             <div class="col-sm-3 form-group">
+                    <label for="fromYear2">From Year </label>
+                    <input type="date"
+                    id="fromYear2"
                     class="form-control" 
-                    fromYear="fromYear">
-                    <label for ="toYear"> To Year </label>
-                    <input type="number" 
-                    id = "toYear"
+                    fromYear="fromYear2">
+                    <label for ="toYear2"> To Year </label>
+                    <input type="date" 
+                    id = "toYear2"
                     class="form-control"
-                    toYear="toYear">
-            </div><br>
-              <div class="form-group">
+                    toYear="toYear2">
+            </div>
+              <div class="col-sm-3 form-group">
                   <label for="percentage">Percentage  </label>
-                  <input type="number" 
+                  <input type="percentage" 
                   id="percentage"
                   class="form-control"
                   percentage="percentage">
-            </div><br>
-            <button class="btn btn-primary" type="submit">Save</button>
-            <button class ="btn btn-primary" type="reset">reset</button>
-        </div>
-       </form>
+                </div>
+                <button class="btn btn-primary" type="submit">Save</button>
+                <button class ="btn btn-primary" type="reset">reset</button>
+            </div>
+           </form>
     </div>
   </div>
-  
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle" >
+          Add New Educational Feild <span class="caret"></span>   
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Diploma</a></li>
+      <li><a href="#"Graduation></a></li>
+      <li><a href="#">Post Graduation</a></li>
+      <li><a href="#">Other</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
    
