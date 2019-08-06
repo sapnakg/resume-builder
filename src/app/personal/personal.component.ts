@@ -18,6 +18,6 @@ export class PersonalComponent implements OnInit {
   }
 
   onPrev(){
-    this.router.navigateByUrl('/')
+    this.router.navigateByUrl('/');
   }
 }

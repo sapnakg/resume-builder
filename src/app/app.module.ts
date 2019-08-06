@@ -18,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedComponent } from './shared/shared.component';
 
 
+import { DropdownDirective } from './education/dropdown.directive';
 
 
 @NgModule({
@@ -27,6 +28,8 @@ import { SharedComponent } from './shared/shared.component';
     EducationComponent,
     ExperienceComponent,
     SkillsComponent,
+    HeaderComponent,
+    DropdownDirective,
     SoftSkillsComponent,
     TechSkillsComponent,
     WelcomeComponent,
