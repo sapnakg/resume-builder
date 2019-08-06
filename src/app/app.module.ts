@@ -12,6 +12,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SoftSkillsComponent } from './skills/softskills/softskills.component';
 
 import { HeaderComponent } from './header/header.component';
+import { TechSkillsComponent } from './skills/techskills/techskills.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SharedComponent } from './shared/shared.component';
+
 
 
 
@@ -23,13 +28,18 @@ import { HeaderComponent } from './header/header.component';
     ExperienceComponent,
     SkillsComponent,
     SoftSkillsComponent,
-    TechSkillsComponent
+    TechSkillsComponent,
+    WelcomeComponent,
+    HeaderComponent,
+    SharedComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HeaderComponent
+    AppRoutingModule
+
+    
   ],
 
   providers: [],
