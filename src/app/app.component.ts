@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'resume-builder';
+loadedFeature= 'education';
+
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
+  }
 }
