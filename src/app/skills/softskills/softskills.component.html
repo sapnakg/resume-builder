@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form [formGroup] = "softSkillForm">  
+            <h1> Soft Skill </h1>
+            <button
+                type="button"
+                class="btn btn-success"
+                (click)="onAddSoftSkill()">Add Skill
+            </button>
+            <div class="row">
+                <div class="col-xs-12" 
+                formArrayName = "softSkills"
+                *ngFor = "let softSkillsControls of softSkillForm.get('softSkills').controls; let i = index"
+                [formControlName] = "i">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <input 
+                            type = "text"
+                            class = "form-control">     
+                        </div>
+                    </div>                           
+                </div>
+            </div>
+        </form>
+    </div>
+</div>    
