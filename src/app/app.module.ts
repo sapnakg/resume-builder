@@ -12,7 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SoftSkillsComponent } from './skills/softskills/softskills.component';
 
 import { HeaderComponent } from './header/header.component';
-
+import { DropdownDirective } from './education/dropdown.directive';
 
 
 @NgModule({
@@ -22,8 +22,11 @@ import { HeaderComponent } from './header/header.component';
     EducationComponent,
     ExperienceComponent,
     SkillsComponent,
+    HeaderComponent,
+    DropdownDirective,
     SoftSkillsComponent,
     TechSkillsComponent
+
   ],
   imports: [
     BrowserModule,
