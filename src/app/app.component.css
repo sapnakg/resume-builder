@@ -1,8 +1,19 @@
-.row{
-    display: -ms-inline-flexbox;
-    flex-direction: down;
-    }
+/* img.bg{
+    position: relative;
+    min-width:1024%;
+    min-height: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+} */
 
-input.ng-invalid.ng-touched {
-    border: 1px solid red;
+.image{
+    height:46.86em; background-size:cover; width:auto;
+    background-image:url('http://www.sclance.com/backgrounds/professional-website-background/professional-website-background_1821691.jpg');
+    background-position:50% 50%;
+  }
+
+.row{
+    padding-top: 12em
 }
