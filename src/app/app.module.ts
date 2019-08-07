@@ -7,9 +7,19 @@ import { PersonalComponent } from './personal/personal.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SoftSkillsComponent } from './skills/softskills/softskills.component';
+
+import { HeaderComponent } from './header/header.component';
 import { TechSkillsComponent } from './skills/techskills/techskills.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SharedComponent } from './shared/shared.component';
+
+
+import { DropdownDirective } from './education/dropdown.directive';
+
 
 @NgModule({
   declarations: [
@@ -18,14 +28,23 @@ import { TechSkillsComponent } from './skills/techskills/techskills.component';
     EducationComponent,
     ExperienceComponent,
     SkillsComponent,
+    HeaderComponent,
+    DropdownDirective,
     SoftSkillsComponent,
-    TechSkillsComponent
+    TechSkillsComponent,
+    WelcomeComponent,
+    HeaderComponent,
+    SharedComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
+
+    
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

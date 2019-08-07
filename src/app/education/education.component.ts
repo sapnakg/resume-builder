@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {  Router } from '@angular/router';
+import {  NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  styleUrls: ['./education.component.css'] 
+        
 })
-export class EducationComponent implements OnInit {
+export class EducationComponent  {
+@ViewChild('f', { static: false} ) eduDetailsForm: NgForm;
 
-  constructor() { }
+  constructor(private router: Router) { }
+ 
 
-  ngOnInit() {
+
+  onNext(){
+    this.router.navigateByUrl('/header/experience');
   }
 
+  onPrev(){
+    this.router.navigateByUrl('/header/personal')
+  }
+
+onSubmit(){
+    console.log(this.eduDetailsForm);
+
+}
 }

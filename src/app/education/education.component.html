@@ -1,1 +1,123 @@
-<p>education works!</p>
+
+<div class="row">
+  <div class="col-xs-8">
+      <h3>Schooling Details</h3>
+    <form >
+      <div class="row">
+          <div class="col-sm-3 form-group">
+             
+                <label for="schoolName" >Institution Name  </label>
+                <input type="text" 
+                id= "schoolName"
+                class="form-control"
+                schoolName="schoolName">
+            </div>
+            <div class="col-sm-3 form-group">
+                <label for="percentage">Percentage  </label>
+                <input type="percentage" 
+                id="percentage"
+                class="form-control"
+                percentage="percentage">
+              </div>
+              <div class="col-sm-3 form-group">
+                  <label for="fromYear">From Year </label>
+                  <input type="date"
+                  id="fromYear"
+                  class="form-control" 
+                  fromYear="fromYear">
+                </div>
+                <div class="col-sm-3 form-group">
+                  <label for ="toYear"> To Year </label>
+                  <input type="date" 
+                  id = "toYear"
+                  class="form-control"
+                  toYear="toYear">
+          </div>
+          <button class="btn btn-primary" type="submit">Save</button>
+          <button class ="btn btn-primary" type="reset">reset</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="row">
+    <div class="col-xs-8">
+        <h3>PUC / +2 Details</h3>
+      <form >
+        <div class="row">
+            <div class="col-sm-3 form-group">
+                
+                  <label for="colName" >Institution Name  </label>
+                  <input type="text" 
+                  id= "colName"
+                  class="form-control"
+                  colName="colName">
+              </div>
+              <div class="col-sm-3 form-group">
+                  <label for="percentage2">Percentage  </label>
+                  <input type="percentage" 
+                  id="percentage2"
+                  class="form-control"
+                  percentage2="percentage2">
+                </div>
+                <div class="col-sm-3 form-group">
+                    <label for="fromYear2">From Year </label>
+                    <input type="date"
+                    id="fromYear2"
+                    class="form-control" 
+                    fromYear2="fromYear2">
+                  </div>
+                  <div class="col-sm-3 form-group">
+                    <label for ="toYear2"> To Year </label>
+                    <input type="date" 
+                    id = "toYear2"
+                    class="form-control"
+                    toYear2="toYear2">
+            </div>
+            <button class="btn btn-primary" type="submit">Save</button>
+            <button class ="btn btn-primary" type="reset">reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+
+
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group" appDropdown>
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle" >
+          Add New Educational Feild <span class="caret"></span>   
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Diploma</a></li>
+      <li><a href="#">Graduation</a></li>
+      <li><a href="#">Post Graduation</a></li>
+      <li><a href="#">Other</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+   
+
+  
+        <div class="container">
+                <div class="row">
+                    <div class="text-left">
+                        <button class="btn btn-success" (click)="onPrev()">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="text-right">
+                        <button class="btn btn-success" (click)="onNext()">Next</button>
+                    </div>
+                </div>
+            </div>
+    
