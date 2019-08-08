@@ -15,10 +15,10 @@ import { HeaderComponent } from './header/header.component';
 import { TechSkillsComponent } from './skills/techskills/techskills.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SharedComponent } from './shared/shared.component';
 
 
 import { DropdownDirective } from './education/dropdown.directive';
+
 
 
 @NgModule({
@@ -33,8 +33,7 @@ import { DropdownDirective } from './education/dropdown.directive';
     SoftSkillsComponent,
     TechSkillsComponent,
     WelcomeComponent,
-    HeaderComponent,
-    SharedComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -49,3 +48,4 @@ import { DropdownDirective } from './education/dropdown.directive';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+                         

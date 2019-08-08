@@ -19,11 +19,11 @@ export class ExperienceComponent implements OnInit {
   }
 
   onNext(){
-    this.router.navigateByUrl('/header/skills');
+    this.router.navigateByUrl('/skills');
   }
 
   onPrev(){
-    this.router.navigateByUrl('/header/education')
+    this.router.navigateByUrl('/education')
   }
   // onAddExp(){
   //   const control = new FormControl(null, Validators.required);

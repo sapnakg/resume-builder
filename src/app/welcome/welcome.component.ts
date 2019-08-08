@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
+  isClicked = false;
 
   constructor(private router: Router) { }
 
@@ -13,6 +14,7 @@ export class WelcomeComponent implements OnInit {
   }
 
   onBuild(){
-    this.router.navigateByUrl('/header/personal');
+    this.router.navigateByUrl('/personal');
+    //this.isClicked = true;
   }
 }

@@ -20,6 +20,6 @@ export class SkillsComponent implements OnInit {
   }
 
   onPrev(){
-    this.router.navigateByUrl('/header/experience');
+    this.router.navigateByUrl('/experience')
   }
 }
