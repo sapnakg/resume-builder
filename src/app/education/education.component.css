@@ -1,3 +1,6 @@
+.row{
+    margin-left: 10px;
+}
 #hash{
     display: flex;
     justify-content: space-between;
@@ -7,7 +10,13 @@
     position: absolute;
     bottom: 0;
     width: 80%;
+}
 
+#page-container{
+    position: relative;
+    min-height: 76.8vh;
+}
 
-    
+#content-wrap{
+    padding-bottom: 2.5rem;
 }

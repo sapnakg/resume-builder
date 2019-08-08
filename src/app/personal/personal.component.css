@@ -1,6 +1,7 @@
 .row{
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 #hash{
@@ -11,9 +12,14 @@
 .bottom{
     position: absolute;
     bottom: 0;
-    width: 80%;
-
-
-    
+    width: 80%;   
 }
 
+#page-container{
+    position: relative;
+    min-height: 75vh;
+}
+
+#content-wrap{
+    padding-bottom: 2.5rem;
+}
