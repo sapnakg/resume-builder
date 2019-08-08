@@ -16,11 +16,11 @@ export class EducationComponent  {
 
 
   onNext(){
-    this.router.navigateByUrl('/header/experience');
+    this.router.navigateByUrl('/experience');
   }
 
   onPrev(){
-    this.router.navigateByUrl('/header/personal')
+    this.router.navigateByUrl('/personal')
   }
 
 onSubmit(){
