@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormArray, FormControl, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  
+  onNext(){
+    this.router.navigateByUrl('/');
+  }
+
+  onPrev(){
+    this.router.navigateByUrl('/experience')
+  }
 }

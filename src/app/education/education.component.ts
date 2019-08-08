@@ -1,4 +1,5 @@
-import { Component  , ViewChild} from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {  Router } from '@angular/router';
 import {  NgForm } from '@angular/forms';
 
 @Component({
@@ -10,20 +11,18 @@ import {  NgForm } from '@angular/forms';
 export class EducationComponent  {
 @ViewChild('f', { static: false} ) eduDetailsForm: NgForm;
 
-  // schoolname = new FormControl('');
-  // fromYear = new FormControl('');
-  // toYear = new FormControl('');
-  // percentage = new FormControl('');
-  // colname = new FormControl('');
-  // fromYear2 = new FormControl('');
-  // toYear2 = new FormControl('');
-  // percentage2 = new FormControl('');
+  constructor(private router: Router) { }
+ 
 
 
-// onSubmit(form:NgForm){
-//     console.log(form);
+  onNext(){
+    this.router.navigateByUrl('/experience');
+  }
 
-// }
+  onPrev(){
+    this.router.navigateByUrl('/personal')
+  }
+
 onSubmit(){
     console.log(this.eduDetailsForm);
 

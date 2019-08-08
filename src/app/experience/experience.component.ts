@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 //import { FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
   //addExpForm : FormGroup;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     // this.addExpForm= new FormGroup({
@@ -17,6 +18,13 @@ export class ExperienceComponent implements OnInit {
     // });
   }
 
+  onNext(){
+    this.router.navigateByUrl('/skills');
+  }
+
+  onPrev(){
+    this.router.navigateByUrl('/education')
+  }
   // onAddExp(){
   //   const control = new FormControl(null, Validators.required);
   //   (<FormArray>this.addExpForm.get('exp')).push(control)
