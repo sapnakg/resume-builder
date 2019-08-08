@@ -14,3 +14,4 @@ loadedFeature = 'education';
     this.loadedFeature = feature;
   }
 }
+

@@ -14,7 +14,7 @@ export class PersonalComponent implements OnInit {
   }
 
   onNext(){
-    this.router.navigateByUrl('/header/education');
+    this.router.navigateByUrl('/education');
   }
 
   onPrev(){
