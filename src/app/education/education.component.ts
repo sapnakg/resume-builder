@@ -20,11 +20,15 @@ export class EducationComponent  {
   }
 
   onPrev(){
-    this.router.navigateByUrl('/personal')
+    this.router.navigateByUrl('/personal');
   }
 
 onSubmit(){
     console.log(this.eduDetailsForm);
 
+}
+
+onFeild(){
+  this.router.navigateByUrl('/education/education-feild');
 }
 }

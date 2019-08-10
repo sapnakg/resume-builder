@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 //import { FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
 
+
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
@@ -23,11 +24,13 @@ export class ExperienceComponent implements OnInit {
   }
 
   onPrev(){
-    this.router.navigateByUrl('/education')
+    this.router.navigateByUrl('/education');
   }
-  // onAddExp(){
-  //   const control = new FormControl(null, Validators.required);
-  //   (<FormArray>this.addExpForm.get('exp')).push(control)
-  // }
+  //  onAddExp(){
+     
+  //   this.router.navigateByUrl('/experience/experience-field')
+  
+
+  //  }
 
 }
