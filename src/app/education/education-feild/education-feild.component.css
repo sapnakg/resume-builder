@@ -1,0 +1,15 @@
+.row{
+    margin-left: 3px;
+}
+#hash{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+  
+}
