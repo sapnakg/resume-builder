@@ -10,12 +10,13 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 })
 export class EducationComponent implements OnInit  {
-
-@ViewChild('f', { static: false} ) eduDetailsForm: NgForm;
- educationForm: FormGroup;
-ngOnInit() {
-  this.initForm();
-}
+  // tslint:disable-next-line: no-trailing-whitespace
+  
+  @ViewChild('f', { static: false} ) eduDetailsForm: NgForm;
+   educationForm: FormGroup;
+  ngOnInit() {
+    this.initForm();
+  }
 
   constructor(private router: Router) { }
 
@@ -32,18 +33,19 @@ ngOnInit() {
 onSubmit() {
     console.log(this.eduDetailsForm);
 }
+// tslint:disable-next-line: one-line
 private initForm(){
-  let eduName = '';
-  let eduPercentage = '';
-  let eduFromyear = '';
-  let eduToyear = '';
+  const eduName = '';
+  const eduPercentage = '';
+  const eduFromyear = '';
+  const eduToyear = '';
 
-this.educationForm = new FormGroup({
-  'schoolName': new FormControl(eduName, Validators.required),
-  'percentage' : new FormControl(eduPercentage, Validators.required),
-  'fromYear' : new FormControl(eduFromyear, Validators.required),
-  'toYear' : new FormControl(eduToyear, Validators.required),
-    
+  this.educationForm = new FormGroup({
+  schoolName: new FormControl(eduName, Validators.required),
+  percentage : new FormControl(eduPercentage, Validators.required),
+  fromYear : new FormControl(eduFromyear, Validators.required),
+  toYear : new FormControl(eduToyear, Validators.required),
+
   });
 }
 
