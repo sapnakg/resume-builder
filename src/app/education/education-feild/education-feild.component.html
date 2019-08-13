@@ -1,41 +1,61 @@
 <div class="row">
-    <div class="col-xs-8">
-        <h3>PUC / +2 Details</h3>
-      <form >
-        <div class="row">
+    <div class="col-xs-12">
+        <form [formGroup] = "eduFeildsForm">  
+            <button
+                type="button"
+                class="btn btn-primary"
+                (click)="onAddSEduFeilds()">Add new Education Field
+            </button>
+            <div class="row">
+                <div class="col-xs-12" 
+                formArrayName = "eduFeilds"
+                *ngFor = "let eduFeildsControl of eduFeildsForm.get('eduFeilds').controls; let i = index"
+                [formControlName] = "i">
+  
+
+<div class="row">
+    <div class="col-xs-12">
+        <form >
+         <div class="row">
             <div class="col-sm-3 form-group">
-                
-                  <label for="feildName" >Institution Name  </label>
-                  <input type="text" 
-                  id= "feildName"
-                  class="form-control"
-                  colName="feildName">
-              </div>
-              <div class="col-sm-3 form-group">
-                  <label for="percentageN">Percentage  </label>
-                  <input type="percentage" 
-                  id="percentageN"
-                  class="form-control"
-                  percentage2="percentageN">
-                </div>
-                <div class="col-sm-3 form-group">
-                    <label for="fromYearN">From Year </label>
-                    <input type="date"
-                    id="fromYearN"
-                    class="form-control" 
-                    fromYear2="fromYearN">
-                  </div>
-                  <div class="col-sm-3 form-group">
-                    <label for ="toYearN"> To Year </label>
-                    <input type="date" 
-                    id = "toYearN"
-                    class="form-control"
-                    toYear2="toYearN">
+                 <label for="compName">Course Name</label>
+                <input type="text" id="compName" class="form-control">
             </div>
+            <div class="col-sm-3 form-group">
+                <label for="position">Institution Name</label>
+               <input type="text" id="position" class="form-control">
+           </div>
+           <div class="col-sm-2">
+                <label for="start">Start Year </label>
+                <input type="date"
+                id="start"
+                class="form-control" 
+                start="start"
+                ngModule required>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for ="end"> End Year </label>
+                <input type="date" 
+                id = "end"
+                class="form-control"
+                end="end"ngModule required>
+            </div>
+         
+ <div class="row">
+            <div class="col-xs-12 ">
+              
             <button class="btn btn-primary" type="submit">Save</button>
+            &nbsp;
             <button class ="btn btn-primary" type="reset">reset</button>
         </div>
-      </form>
+</div>
+        </div>   
+        </form>
     </div>
-  </div>
-  
+</div>
+                        
+                </div>
+            </div>
+        </form>
+    </div>
+</div>    

@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
+
 import { AppComponent } from './app.component';
 import { PersonalComponent } from './personal/personal.component';
 import { EducationComponent } from './education/education.component';
@@ -15,10 +17,9 @@ import { TechSkillsComponent } from './skills/techskills/techskills.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
 
-
-import { DropdownDirective } from './education/dropdown.directive';
 import { EducationFeildComponent } from './education/education-feild/education-feild.component';
 import { ExperienceFieldComponent } from './experience/experience-field/experience-field.component';
+
 
 
 import {enableProdMode} from '@angular/core';
@@ -33,7 +34,6 @@ enableProdMode();
     ExperienceComponent,
     SkillsComponent,
     HeaderComponent,
-    DropdownDirective,
     SoftSkillsComponent,
     TechSkillsComponent,
     WelcomeComponent,

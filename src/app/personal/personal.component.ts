@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {  Router } from '@angular/router';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-personal',
@@ -8,9 +9,14 @@ import { Router } from '@angular/router';
 })
 export class PersonalComponent implements OnInit {
 
+  personalForm: FormGroup;
   constructor(private router: Router) { }
 
   ngOnInit() {
+
+        this.initForm();
+        
+    
   }
 
   onNext(){
@@ -19,5 +25,20 @@ export class PersonalComponent implements OnInit {
 
   onPrev(){
     this.router.navigateByUrl('/');
+  }
+
+  private initForm(){
+    let persName = '';
+    let persMail = '';
+    let persLocation = '';
+    let persPhone = '';
+  
+  this.personalForm = new FormGroup({
+    'name': new FormControl(persName, Validators.required),
+    'email' : new FormControl(persMail, Validators.required),
+    'location' : new FormControl(persLocation, Validators.required),
+    'phone' : new FormControl(persPhone, Validators.required),
+      
+    });
   }
 }
