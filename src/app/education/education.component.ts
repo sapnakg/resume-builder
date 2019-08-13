@@ -5,30 +5,30 @@ import {  NgForm } from '@angular/forms';
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css'] 
-        
+  styleUrls: ['./education.component.css']
+
 })
 export class EducationComponent  {
 @ViewChild('f', { static: false} ) eduDetailsForm: NgForm;
 
   constructor(private router: Router) { }
- 
 
 
-  onNext(){
+
+  onNext() {
     this.router.navigateByUrl('/experience');
   }
 
-  onPrev(){
+  onPrev() {
     this.router.navigateByUrl('/personal');
   }
 
-onSubmit(){
+onSubmit() {
     console.log(this.eduDetailsForm);
 
 }
 
-onFeild(){
-  this.router.navigateByUrl('/education/education-feild');
+onFeild() {
+  // this.router.navigateByUrl('/education/education-feild');
 }
 }

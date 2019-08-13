@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//import { FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
+// import { FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  //addExpForm : FormGroup;
+  // addExpForm : FormGroup;
 
   constructor(private router: Router) { }
 
@@ -19,17 +19,17 @@ export class ExperienceComponent implements OnInit {
     // });
   }
 
-  onNext(){
+  onNext() {
     this.router.navigateByUrl('/skills');
   }
 
-  onPrev(){
+  onPrev() {
     this.router.navigateByUrl('/education');
   }
   //  onAddExp(){
-     
+
   //   this.router.navigateByUrl('/experience/experience-field')
-  
+
 
   //  }
 
