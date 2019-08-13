@@ -10,24 +10,24 @@ import { ReactiveFormsModule } from '@angular/forms';
 })
 export class ExperienceFieldComponent implements OnInit {
 
-  
-  expFeildsForm : FormGroup;
-   
+
+  expFeildsForm: FormGroup;
+
 
   constructor() { }
 
   // tslint:disable-next-line: adjacent-overload-signatures
   ngOnInit() {
     this.expFeildsForm = new FormGroup({
-      'expFeilds' : new FormArray([])
+      expFeilds : new FormArray([])
     });
   }
 
   onAddSExpFeilds() {
     const control = new FormControl(null, Validators.required);
     // tslint:disable-next-line: no-angle-bracket-type-assertion
-    (<FormArray>this.expFeildsForm.get('expFeilds')).push(control)
-    
+    (<FormArray> this.expFeildsForm.get('expFeilds')).push(control);
+
   }
 
 }
