@@ -14,14 +14,14 @@
   
 }
 
-/* #page-container{
+#page-container{
     position: relative;
-    min-height: 75vh;
+    min-height: 76vh;
 }
 
 #content-wrap{
     padding-bottom: 2.5rem;
-} */
+}
 
 .image{
     height:46.86em; background-size:cover; width:auto;

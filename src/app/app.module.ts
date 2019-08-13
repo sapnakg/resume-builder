@@ -26,8 +26,7 @@ import {enableProdMode} from '@angular/core';
 enableProdMode();
 
 
-import {enableProdMode} from '@angular/core';
-enableProdMode();
+
 
 
 @NgModule({
