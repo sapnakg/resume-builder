@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//import { FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
+// import { FormGroup, FormArray, FormControl, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-experience',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  //addExpForm : FormGroup;
+  // addExpForm : FormGroup;
 
   constructor(private router: Router) { }
 
@@ -18,16 +19,18 @@ export class ExperienceComponent implements OnInit {
     // });
   }
 
-  onNext(){
+  onNext() {
     this.router.navigateByUrl('/skills');
   }
 
-  onPrev(){
-    this.router.navigateByUrl('/education')
+  onPrev() {
+    this.router.navigateByUrl('/education');
   }
-  // onAddExp(){
-  //   const control = new FormControl(null, Validators.required);
-  //   (<FormArray>this.addExpForm.get('exp')).push(control)
-  // }
+  //  onAddExp(){
+
+  //   this.router.navigateByUrl('/experience/experience-field')
+
+
+  //  }
 
 }

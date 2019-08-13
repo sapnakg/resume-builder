@@ -6,8 +6,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css'] 
-        
+  styleUrls: ['./education.component.css']
+
 })
 export class EducationComponent implements OnInit  {
 
@@ -18,18 +18,18 @@ ngOnInit() {
 }
 
   constructor(private router: Router) { }
- 
 
 
-  onNext(){
+
+  onNext() {
     this.router.navigateByUrl('/experience');
   }
 
-  onPrev(){
-    this.router.navigateByUrl('/personal')
+  onPrev() {
+    this.router.navigateByUrl('/personal');
   }
 
-onSubmit(){
+onSubmit() {
     console.log(this.eduDetailsForm);
 }
 private initForm(){
@@ -45,5 +45,9 @@ this.educationForm = new FormGroup({
   'toYear' : new FormControl(eduToyear, Validators.required),
     
   });
+}
+
+onFeild() {
+  // this.router.navigateByUrl('/education/education-feild');
 }
 }

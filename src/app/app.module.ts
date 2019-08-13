@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
-
 import { AppComponent } from './app.component';
 import { PersonalComponent } from './personal/personal.component';
 import { EducationComponent } from './education/education.component';
@@ -19,9 +17,17 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 import { DropdownDirective } from './education/dropdown.directive';
+
+import { EducationFeildComponent } from './education/education-feild/education-feild.component';
+import { ExperienceFieldComponent } from './experience/experience-field/experience-field.component';
+
+
 import {enableProdMode} from '@angular/core';
 enableProdMode();
 
+
+import {enableProdMode} from '@angular/core';
+enableProdMode();
 
 
 @NgModule({
@@ -36,7 +42,9 @@ enableProdMode();
     SoftSkillsComponent,
     TechSkillsComponent,
     WelcomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    EducationFeildComponent,
+    ExperienceFieldComponent
   ],
   imports: [
     BrowserModule,
@@ -44,11 +52,10 @@ enableProdMode();
     ReactiveFormsModule,
     AppRoutingModule
 
-    
+
   ],
 
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-                         

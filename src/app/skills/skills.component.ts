@@ -14,12 +14,12 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
   }
 
-  
-  onNext(){
+
+  onNext() {
     this.router.navigateByUrl('/');
   }
 
-  onPrev(){
-    this.router.navigateByUrl('/experience')
+  onPrev() {
+    this.router.navigateByUrl('/experience');
   }
 }
