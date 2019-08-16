@@ -19,8 +19,6 @@ import { EducationFeildComponent } from './education/education-feild/education-f
 import { ExperienceFieldComponent } from './experience/experience-field/experience-field.component';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,

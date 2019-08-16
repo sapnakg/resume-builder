@@ -24,7 +24,7 @@
 }
 
 .image{
-    height:46.86em; background-size:cover; width:auto;
+    height:100%; background-size:cover; width:auto;
     background-image:url('http://www.sclance.com/backgrounds/professional-website-background/professional-website-background_1821691.jpg');
     background-position:50% 50%;
   }

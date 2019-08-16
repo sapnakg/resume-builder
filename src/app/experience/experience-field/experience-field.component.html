@@ -1,18 +1,26 @@
 <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12" >
         <form [formGroup] = "expFeildsForm">  
+            <div class="row1">
             <button
                 type="button"
                 class="btn btn-primary"
                 (click)="onAddSExpFeilds()">Add Experience
             </button>
+        </div>
+        <br>
             <div class="row">
                 <div class="col-xs-12" 
                 formArrayName = "expFeilds"
                 *ngFor = "let expFeildsControl of expFeildsForm.get('expFeilds').controls; let i = index"
                 [formControlName] = "i">
+                <br>
+                <br>
   
 
+<!-- <div id="page-container">
+<div id="content-wrap">  -->
+    <div class="container">
 <div class="row">
     <div class="col-xs-12">
         <form >
@@ -44,21 +52,18 @@
                 <label for="task">Achivement</label>
                 <input type="text" id="task" class="form-control">
             </div>
- <div class="row">
-            <div class="col-xs-12 ">
-              
-            <button class="btn btn-primary" type="submit">Save</button>
-            &nbsp;
-            <button class ="btn btn-primary" type="reset">reset</button>
-        </div>
-</div>
+            <div class="row " >
+                <div class="col-xs-12">
+                <button class="btn btn-primary" type="submit">Save</button>
+                 &nbsp;
+                <button class ="btn btn-primary" type="reset">reset</button>
+                </div>
+            </div>
         </div>   
         </form>
     </div>
 </div>
-                        
-                </div>
-            </div>
-        </form>
-    </div>
-</div>    
+</div>
+
+
+
