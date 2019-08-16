@@ -29,3 +29,9 @@
     background-image:url('http://www.sclance.com/backgrounds/professional-website-background/professional-website-background_1821691.jpg');
     background-position:50% 50%;
   }
+
+
+
+input.ng-invalid.ng-touched {
+    border :1px solid red;
+}

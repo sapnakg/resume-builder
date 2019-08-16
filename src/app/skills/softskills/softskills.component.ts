@@ -7,6 +7,7 @@ import { FormGroup, FormArray, FormControl, Validators} from '@angular/forms';
 })
 export class SoftSkillsComponent implements OnInit {
     softSkillForm : FormGroup;
+    in: any;
    
 
   constructor() { }
@@ -19,7 +20,7 @@ export class SoftSkillsComponent implements OnInit {
 
   onAddSoftSkill() {
     const control = new FormControl(null, Validators.required);
-    (<FormArray>this.softSkillForm.get('softSkills')).push(control)
+    (<FormArray>this.softSkillForm.get('softSkills')).push(control);
     
   }
 
