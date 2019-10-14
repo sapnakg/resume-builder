@@ -23,3 +23,6 @@ export class TechSkillsComponent implements OnInit {
     
   }
 }
+
+
+//some tech skills as well
