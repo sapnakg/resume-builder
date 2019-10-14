@@ -23,3 +23,5 @@ export class SkillsComponent implements OnInit {
     this.router.navigateByUrl('/experience');
   }
 }
+
+//adding few comments just to hacktoberfest tshirt will remove it later
